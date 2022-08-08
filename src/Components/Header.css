@@ -1,0 +1,63 @@
+.App__Header {
+    width: 100%;
+    background: #0095A0;
+}
+.Wrapper{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.Header__Left{
+    flex: 1;
+}
+.App_Logo {
+    font-size: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.Header__Right {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+.Search__Box{
+    flex: 2;
+    display: flex;
+    border: 1px solid #fff;
+    margin-right: 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+.Search__Box input{
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-weight: 400;
+    width: 100%;
+    margin-right: 5px;
+}
+.Search__Box input::placeholder{
+    color: #fff;
+}
+.Search__Box input:focus{
+    background-color: transparent;
+    outline: none;
+}
+.SearchIcon {
+    cursor: pointer;
+    /* color: #fff; */
+}
+.Header__Button{
+    flex: 1;
+    background-color: #f7f5f2;
+    border: none;
+    color: #0095a0;
+    font-weight: 400;
+    font-size: 18px;
+    cursor: pointer;
+}
