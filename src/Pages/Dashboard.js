@@ -1,8 +1,11 @@
 import React from 'react'
+import PieChart from '../Components/PieChart'
 
 function Dashboard() {
   return (
-    <div>Dashboard</div>
+    <div className='Dashboard'>
+      <PieChart />
+    </div>
   )
 }
 
