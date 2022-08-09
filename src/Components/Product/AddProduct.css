@@ -1,0 +1,62 @@
+.AddProduct{
+    width: 700px;
+    margin: 0 auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.title__Bar{
+    background-color: #0095A0;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+}
+.Close__Icon{
+    cursor: pointer;
+}
+.Input__Fills, .single__Input{
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+}
+.Input__Fills{
+    padding: 15px 25px;
+}
+.single__Input.sub {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.single__Input.sub span{
+    width: 49.5%;
+}
+.single__Input label{
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+.single__Input input{
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    outline-color: #0095A0;
+}
+.Action__Wrapper {
+    background-color: #fff;
+    border: .01px solid #dddddd4a;
+    margin-top: 30px;
+}
+.Action__Bar {
+    padding: 25px;
+    text-align: right;
+    float: right;
+}
+.Action__Bar button:hover,
+.Action__Bar button{
+    color: #fff;
+    background-color: #0095A0;
+}
+.Action__Bar button:nth-child(1):hover,
+.Action__Bar button:nth-child(1){
+    background-color: #B7B8BC;
+}

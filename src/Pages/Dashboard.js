@@ -1,6 +1,6 @@
-import React from 'react'
-import PieChart from '../Components/PieChart'
-import Products from '../Components/Product/Products'
+import React from 'react';
+import PieChart from '../Components/PieChart';
+import Products from '../Components/Product/Products';
 import './Dashboard.css';
 
 function Dashboard() {

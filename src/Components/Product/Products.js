@@ -9,7 +9,7 @@ function Products() {
       <div className="Seaction__Header">
           <h3>All Products</h3>
           <span className="Product__Filter">
-            Short by: 
+            Sort by: 
             <select className="Filter__Short" name="" id="">
               <option value="">All Products</option>
               <option value="">Best Value</option>

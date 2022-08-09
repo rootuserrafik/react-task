@@ -1,6 +1,5 @@
 import SearchIcon from '@mui/icons-material/Search';
 import { grey } from '@mui/material/colors';
-
 import './Header.css';
 
 function Header() {
