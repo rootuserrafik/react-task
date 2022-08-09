@@ -1,12 +1,12 @@
-import React from 'react'
+import './ProductRow.css';
 
-function ProductRow({title, brand, ram, rom, tags, price}) {
+function ProductRow({title, brand, ram, rom, tags, price, imgesrc}) {
   return (
     <tr className='ProductRow'>
+        <td><img src={imgesrc} alt={title} /></td>
         <td>
-            <img src="" alt="" />
+            <h2>{title}</h2>
             <span>
-                <h2>{title}</h2>
                 {brand}
             </span>
         </td>

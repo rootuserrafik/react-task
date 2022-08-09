@@ -6,7 +6,8 @@
         "ram": 6,
         "rom": 256,
         "tags": ["Best Value", "Best Camera"],
-        "price": 120000
+        "price": 120000,
+        "imges": "https://www.mobiledokan.com/wp-content/uploads/2021/10/Apple-iPhone-13-Pro-image.jpg"
     },
     {
         "id": 2,
@@ -15,7 +16,8 @@
         "ram": 6,
         "rom": 256,
         "tags": ["Best Performance", "Best Value", "Best Camera"],
-        "price": 150000
+        "price": 150000,
+        "imges": "https://www.mobiledokan.com/wp-content/uploads/2021/10/Apple-iPhone-13-Pro-image.jpg"
     },
     {
         "id": 3,
@@ -24,6 +26,7 @@
         "ram": 8,
         "rom": 256,
         "tags": ["Best Performance"],
-        "price": 135000
+        "price": 135000,
+        "imges": "https://www.mobiledokan.com/wp-content/uploads/2021/10/Apple-iPhone-13-Pro-image.jpg"
     }
 ]

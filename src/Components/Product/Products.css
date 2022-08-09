@@ -1,0 +1,29 @@
+.Seaction__Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+.Product__Filter{
+    font-size: 12px;
+    font-weight: 400;
+}
+.Filter__Short{
+    font-size: 12px;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+table.Products {
+    width: 100%;
+    text-align: left;
+}
+.Products th{
+    font-weight: 400;
+}
+.Products td, .Products th{
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}

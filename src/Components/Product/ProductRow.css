@@ -1,0 +1,7 @@
+.ProductRow h2{
+    font-size: 22px;
+    font-weight: 600;
+}
+.ProductRow img{
+    width: 100px;
+}
