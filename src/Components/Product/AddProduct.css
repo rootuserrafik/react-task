@@ -1,8 +1,24 @@
+.Product__Wrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background: #F7F5F2;
+    width: 100%;
+    height: 100vh;
+    content: "";
+    z-index: 99;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .AddProduct{
     width: 700px;
     margin: 0 auto;
     border-radius: 5px;
     overflow: hidden;
+    background-color: #fff;
 }
 .title__Bar{
     background-color: #0095A0;
@@ -41,6 +57,42 @@
     border: 1px solid #ddd;
     outline-color: #0095A0;
 }
+.InputTags{
+    border: 1px solid #ddd;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+.InputTags input{
+    outline: none;
+    border: none;
+    margin: 0;
+}
+.KeyboardArrowDownOutlinedIcon{
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    bottom: 4px;
+}
+.Tag__Result {
+    font-size: 14px;
+    list-style: none;
+    position: absolute;
+    background-color: #fff;
+    bottom: -32px;
+    padding: 0;
+    overflow: hidden;
+    display: -webkit-inline-box;
+    z-index: 999;
+    width: 100%;
+}
+.Tag__Result li{
+    cursor: pointer;
+}
+
+
 .Action__Wrapper {
     background-color: #fff;
     border: .01px solid #dddddd4a;

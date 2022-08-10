@@ -28,5 +28,45 @@
         "tags": ["Best Performance"],
         "price": 135000,
         "imges": "https://www.mobiledokan.com/wp-content/uploads/2021/10/Apple-iPhone-13-Pro-image.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Pixal 6",
+        "brand": "Google",
+        "ram": 8,
+        "rom": 256,
+        "tags": ["Best Performance"],
+        "price": 135000,
+        "imges": "https://www.mobiledokan.com/wp-content/uploads/2021/10/Apple-iPhone-13-Pro-image.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Pixal 6",
+        "brand": "Google",
+        "ram": 8,
+        "rom": 256,
+        "tags": ["Best Performance"],
+        "price": 135000,
+        "imges": "https://www.mobiledokan.com/wp-content/uploads/2021/10/Apple-iPhone-13-Pro-image.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Pixal 6",
+        "brand": "Google",
+        "ram": 8,
+        "rom": 256,
+        "tags": ["Best Performance"],
+        "price": 135000,
+        "imges": "https://www.mobiledokan.com/wp-content/uploads/2021/10/Apple-iPhone-13-Pro-image.jpg"
+    },
+    {
+        "id": 7,
+        "title": "Pixal 6",
+        "brand": "Google",
+        "ram": 8,
+        "rom": 256,
+        "tags": ["Best Performance"],
+        "price": 135000,
+        "imges": "https://www.mobiledokan.com/wp-content/uploads/2021/10/Apple-iPhone-13-Pro-image.jpg"
     }
 ]

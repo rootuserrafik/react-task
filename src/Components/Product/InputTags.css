@@ -1,0 +1,15 @@
+.Tag__Result li,
+.InputTags .add__Tags{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #EAEAEA;
+    padding: 0 3px;
+    margin-left: 5px;
+}
+.TagClose__Icon{
+    font-size: 12px;
+    padding: 0 2px;
+    cursor: pointer;
+}
