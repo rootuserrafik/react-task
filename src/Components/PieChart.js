@@ -6,8 +6,9 @@ import Data from './../UserData.json';
 function PieChart() {
     const LabelName = Data.map (data => ([data.brand]))
     const [options, setOptions] = useState({
-        title: {
-            text: "Sources"
+        title:{ 
+            text:"Sources",
+            style: {fontSize: 30}
         },
         noData: {
             text: "Empaty data"
@@ -21,15 +22,10 @@ function PieChart() {
         <Chart
             type= 'pie'
             width= {500}
-            height= {500}
+            height= {400}
             series= {[54,54,54]}
             options= {options}
         />
-        {
-            Data.map ( data => (
-                <li key={data.id}>{data.brand}</li>
-            ) )
-        }
     </div>
   )
 }

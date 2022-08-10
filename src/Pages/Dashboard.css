@@ -2,3 +2,9 @@
     width: 1200px;
     margin: 0 auto;
 }
+.Chart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0;
+}
