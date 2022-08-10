@@ -1,8 +1,8 @@
 import React from 'react'
 
-function TagList({TagName}) {
+function TagList({TagName, TagItemClicked}) {
   return (
-    <li>{TagName}</li>
+    <li onClick={TagItemClicked}>{TagName}</li>
   )
 }
 

@@ -13,6 +13,7 @@ import TagNames from './../../UserData.json';
 
 function AddProduct({ open, onClose, searchTags }) {
     const [tagFilterData, setTagFilterData] = useState([]);
+    const [selectedTag, setSelectedTag] = useState([]);
     const handelTagFilter = (e) => {
         const searchTagWord = e.target.value;
         const newTagFilter = TagNames.filter((value) => {
@@ -24,6 +25,16 @@ function AddProduct({ open, onClose, searchTags }) {
             setTagFilterData(newTagFilter);
         }
     };
+    function handelKeyDown(e){
+        if(e.key !== 'Enter') return
+        const value = e.target.value
+        if(!value.trim()) return
+        setSelectedTag([...selectedTag, value])
+        e.target.value = '';
+    }
+    function removeTagItem(index){
+        setSelectedTag(selectedTag.filter((el, i) => i !== index))
+    }
     if(!open) return null;
   return (
     <div className='Product__Wrapper'>
@@ -53,8 +64,12 @@ function AddProduct({ open, onClose, searchTags }) {
                 <div className='single__Input'>
                     <label>Tags</label>
                     <div className='InputTags'>
-                        <InputTags />
-                        <input onChange={handelTagFilter} type="text" placeholder='Search and Select' />
+                        {
+                            selectedTag.map((tag, index) => {
+                                return <InputTags removeTagItem={() => removeTagItem(index)} index={index} tagName={tag} />
+                            })
+                        }
+                        <input onKeyDown={handelKeyDown} onChange={handelTagFilter} type="text" placeholder='Search and Select' />
                         {tagFilterData.length === 0 ? <KeyboardArrowDownOutlinedIcon className='KeyboardArrowDownOutlinedIcon'/> : <KeyboardArrowUpOutlinedIcon className='KeyboardArrowDownOutlinedIcon'/> }
                         {
                             tagFilterData.length !== 0 && (

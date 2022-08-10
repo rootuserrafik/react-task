@@ -57,13 +57,16 @@
     border: 1px solid #ddd;
     outline-color: #0095A0;
 }
-.InputTags{
+.InputTags {
     border: 1px solid #ddd;
     margin-bottom: 8px;
     display: flex;
     flex-direction: row;
     align-items: center;
     position: relative;
+    flex-wrap: wrap;
+    padding: 2px;
+    font-size: 14px;
 }
 .InputTags input{
     outline: none;
