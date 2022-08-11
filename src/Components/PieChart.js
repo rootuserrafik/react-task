@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import './PieChart.css'
 import Chart from 'react-apexcharts';
-import Data from './../UserData.json';
+import Data from './../data.json';
 
 function PieChart() {
-    const LabelName = Data.map (data => (data.source));
+    const LabelName = Data.slice(0, 5).map (data => (data.seller_name));
     const uniqueLabel = [...new Set (LabelName)];
     
     function testFun(value){

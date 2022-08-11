@@ -1,7 +1,12 @@
-import React from 'react'
 import Chart from 'react-apexcharts';
+import Data from './../data.json';
 
 function BarChart() {
+    const totalValue = Data.map (data => (data.phone_price));
+    console.log(totalValue);
+    function getMath(){
+        console.log()
+    }
   return (
     <div>
         <Chart

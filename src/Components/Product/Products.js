@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import ProductRow from './ProductRow';
 import './Products.css';
-import Data from './../../UserData.json';
+import Data from './../../data.json';
 
 function Products() {
   const [selectedOption, setSelectedOption] = useState([]);  
+  const phoneTags = ["Best Camara", "Best Performance", "Best value"];  
   return (
     <div className='Product__View'>
       <div className="Seaction__Header">
@@ -28,16 +29,17 @@ function Products() {
           <th>Price</th>
         </tr>
         {
-          Data.map( data =>(
+          Data.slice(0, 20).map( data =>(
             <ProductRow
-              key = {data.id}
-              title = {data.title}
+              key = {data._id}
+              title = {data.phone_title}
+              link = {data.phone_link}
               brand = {data.brand}
               ram = {data.ram}
-              rom = {data.rom}
-              tags = {data.tags}
-              price = {data.price}
-              imgesrc = {data.imges}
+              rom = {data.storage}
+              tags = {phoneTags}
+              price = {data.phone_price}
+              imgesrc = {data.phone_images[0]}
             />
           ))
         }

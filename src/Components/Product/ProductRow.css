@@ -5,3 +5,21 @@
 .ProductRow img{
     width: 100px;
 }
+.product__Tags {
+	display: flex;
+	list-style: none;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+.product__Tags li {
+	border: 1px solid #DD9E10;
+	color: #DD9E10;
+	padding: 5px 8px;
+	font-size: 12px;
+	font-weight: 500;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
