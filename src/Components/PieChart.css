@@ -1,3 +1,7 @@
 .PieChart__Left{
     width: 30%;
 }
+.apexcharts-legend.apexcharts-align-center.apx-legend-position-right {
+    display: flex;
+    justify-content: center;
+}

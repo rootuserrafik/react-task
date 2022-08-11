@@ -4,7 +4,17 @@ import Chart from 'react-apexcharts';
 import Data from './../UserData.json';
 
 function PieChart() {
-    const LabelName = Data.map (data => ([data.brand]))
+    const LabelName = Data.map (data => (data.source));
+    const uniqueLabel = [...new Set (LabelName)];
+    
+    function testFun(value){
+        const geArrLen = value.length
+        console.log(geArrLen);
+        
+    }
+    uniqueLabel.forEach(testFun);
+    
+    const series = [45,54,74];
     const [options, setOptions] = useState({
         title:{ 
             text:"Sources",
@@ -13,9 +23,8 @@ function PieChart() {
         noData: {
             text: "Empaty data"
         },
-        labels: LabelName
+        labels: uniqueLabel
     })
-    
     
     return (
         <div className='PieChart'>
@@ -23,7 +32,7 @@ function PieChart() {
             type= 'pie'
             width= {500}
             height= {400}
-            series= {[54,54,54]}
+            series= {series}
             options= {options}
         />
     </div>
